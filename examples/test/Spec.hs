@@ -1,7 +1,8 @@
 import Control.Concurrent (threadDelay)
 import Test.Hspec (Spec, describe, example, it, shouldBe, shouldSatisfy)
-import Test.Hspec.Formatters.Xml (hspecWithElapsedTimes, hspecWithElapsedTimesAndReport)
 import Test.QuickCheck (property)
+
+import Test.Hspec.Formatters.Xml
 
 main :: IO ()
 main = do
@@ -23,7 +24,7 @@ spec = do
 
   it "fails" $ do
     threadDelay 3_000
-    "an actual String" `shouldBe` "the String we said we expected"
+    "an actual String" `shouldBe` ("the String we said we expected" :: String)
 
   it "errors" $ example $ do
     threadDelay 4_000
