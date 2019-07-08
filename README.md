@@ -8,5 +8,5 @@ The time formatter can also be used separately.
 
 ## Example
 
-A complete example of running a Spec can be found in [example/](example/test/Spec.hs). The output
+A complete example of running a Spec can be found in [example/](examples/test/Spec.hs). The output
 is [examples/test-results/examples.xml](examples/test-results/examples.xml).
