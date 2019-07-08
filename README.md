@@ -1,6 +1,6 @@
 # hspec-junit-xml
 
-[![Build Status](https://travis-ci.org/tvision-insights/hspec-junit-xml.svg?branch=travis)](https://travis-ci.org/tvision-insights/hspec-junit-xml)
+[![Build Status](https://travis-ci.org/tvision-insights/hspec-junit-xml.svg?branch=master)](https://travis-ci.org/tvision-insights/hspec-junit-xml)
 
 Formatter for Hspec that creates test reports in the "JUnit" format that's understood by CI tools,
 including the elasped time of each test. The elapsed time is also added to Hspec's `specdoc`
