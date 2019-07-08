@@ -7,7 +7,7 @@ import Data.IORef (modifyIORef', newIORef, readIORef)
 import Data.Text (Text, pack)
 import Data.Time.Clock (UTCTime, getCurrentTime)
 import Test.Hspec.Formatters
-  ( FailureReason (Error)
+  ( FailureReason
   , FormatM
   , Formatter (Formatter)
   , Seconds (Seconds)
@@ -34,7 +34,6 @@ import Text.Printf (printf)
 data TestResult
   = TestResultSuccess
   | TestResultFailure FailureReason
-  -- | TestResultError FailureReason
   | TestResultSkipped (Maybe String)
   deriving (Show)
 
@@ -46,9 +45,6 @@ data FormatterState = FormatterState
   , formatterStateOutput    :: Text
   -- ^Output written by all the tests.
   } deriving (Show)
-
--- makePrisms ''TestResult
--- makeLenses ''FormatterState
 
 data RecordedTestActions = RecordedTestActions
   { recordedTestActionsElapsed   :: FormatM Double

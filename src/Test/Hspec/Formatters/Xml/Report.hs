@@ -5,7 +5,7 @@ import Data.List (intercalate)
 import Data.Maybe (fromMaybe)
 import Data.Monoid (Sum (Sum), getSum)
 import Data.Text (Text, pack)
-import Data.Time.Clock (UTCTime, getCurrentTime)
+import Data.Time.Clock (UTCTime)
 import Data.Time.Format (defaultTimeLocale, formatTime, iso8601DateFormat)
 import Test.Hspec.Formatters
   ( FailureReason (Error, ExpectedButGot, NoReason, Reason)
