@@ -40,5 +40,5 @@ before_install:
 script: |
   stack $ARGS --no-terminal --install-ghc build
   cd examples
-  stack $ARGS --no-terminal build --test --no-run-test
+  stack $ARGS --no-terminal build --test --no-run-tests
   stack $ARGS --no-terminal test || echo "(failure expected)"
