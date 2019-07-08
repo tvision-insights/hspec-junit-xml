@@ -37,8 +37,7 @@ before_install:
 # library, executables, and test suites, and runs the test
 # suites. --no-terminal works around some quirks in Travis's terminal
 # implementation.
-script: |
-  stack $ARGS --no-terminal --install-ghc build
-  cd examples
-  stack $ARGS --no-terminal build --test --no-run-tests
-  stack $ARGS --no-terminal test || echo "(failure expected)"
+script:
+  - stack $ARGS --no-terminal --install-ghc build
+  - cd examples && stack $ARGS --no-terminal build --test --no-run-tests
+  - cd examples && stack $ARGS --no-terminal test || echo "(failure expected)"
