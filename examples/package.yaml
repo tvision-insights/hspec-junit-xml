@@ -1,0 +1,23 @@
+name: example
+version: 0.1.0.0
+maintainer: TVision
+license: MIT
+
+default-extensions:
+- NumericUnderscores
+- OverloadedStrings
+- ScopedTypeVariables
+
+dependencies:
+- base
+- hspec
+- hspec-junit-xml
+- QuickCheck
+
+ghc-options:
+- -Wall
+
+tests:
+  spec:
+    main:                Spec.hs
+    source-dirs:         test

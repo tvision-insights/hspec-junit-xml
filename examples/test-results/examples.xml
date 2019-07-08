@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite tests="6" errors="1" failures="2" name="examples" hostname="localhost" time="1.045" timestamp="2019-07-08T16:32:59">
+<testcase classname="with times and report" name="succeeds, quickly" time="0.002"></testcase>
+<testcase classname="with times and report" name="succeeds, not so fast" time="1.005"></testcase>
+<testcase classname="with times and report" name="fails" time="0.004">
+  <failure type="ExpectedButGot" message="expected: &quot;\&quot;the String we said we expected\&quot;&quot;; actual: &quot;\&quot;an actual String\&quot;&quot;"></failure></testcase>
+<testcase classname="with times and report" name="errors" time="0.005">
+  <error type="Error" message="">IOException of type UserError
+user error (an exception in IO)</error></testcase>
+<testcase classname="with times and report" name="succeeds, with arbitrary input" time="0.019"></testcase>
+<testcase classname="with times and report" name="fails, with arbitrary input" time="0.009">
+  <failure type="Reason" message="Falsifiable (after 17 tests and 2 shrinks):
+  10
+predicate failed on: 10"></failure></testcase>
+<system-out>
+
+
+
+
++++ OK, passed 100 tests.
+</system-out></testsuite>

@@ -1,0 +1,29 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: e8b29b75bf86b7f16c5f94fc3fc7bc5ae10ed47cd5a50021c07300f529fe109e
+
+name:           example
+version:        0.1.0.0
+maintainer:     TVision
+license:        MIT
+build-type:     Simple
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_example
+  hs-source-dirs:
+      test
+  default-extensions: NumericUnderscores OverloadedStrings ScopedTypeVariables
+  ghc-options: -Wall
+  build-depends:
+      QuickCheck
+    , base
+    , hspec
+    , hspec-junit-xml
+  default-language: Haskell2010
