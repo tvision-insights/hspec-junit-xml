@@ -1,0 +1,48 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 06918450452b57d6af1a3af572ab583c5613888655d48499db97c8d6c56e9577
+
+name:           hspec-junit-xml
+version:        0.1.0.0
+synopsis:       Formatter for Hspec that creates test reports in the "JUnit" format that's understood by CI tools.
+description:    Please see the README on GitHub at <https://github.com/tvision-insights/hspec-junit-xml#readme>
+category:       Test
+homepage:       https://github.com/tvision-insights/hspec-junit-xml
+bug-reports:    https://github.com/tvision-insights/hspec-junit-xml/issues
+author:         Moss Prescott <moss@theprescotts.com>
+maintainer:     TVision
+copyright:      2019 TVision
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/tvision-insights/hspec-junit-xml
+
+library
+  exposed-modules:
+      Test.Hspec.Formatters.Xml
+      Test.Hspec.Formatters.Xml.Recording
+      Test.Hspec.Formatters.Xml.Report
+  other-modules:
+      Paths_hspec_junit_xml
+  hs-source-dirs:
+      src
+  default-extensions: OverloadedStrings RecordWildCards
+  ghc-options: -Wall -Werror
+  build-depends:
+      base
+    , blaze-markup
+    , bytestring
+    , directory
+    , hspec
+    , text
+    , time
+  default-language: Haskell2010

@@ -1,0 +1,48 @@
+name:                hspec-junit-xml
+version:             0.1.0.0
+github:              "tvision-insights/hspec-junit-xml"
+license:             MIT
+author:              "Moss Prescott <moss@theprescotts.com>"
+maintainer:          "TVision"
+copyright:           "2019 TVision"
+
+extra-source-files:
+- README.md
+
+synopsis:            Formatter for Hspec that creates test reports in the "JUnit" format that's understood by CI tools.
+category:            Test
+
+description:         Please see the README on GitHub at <https://github.com/tvision-insights/hspec-junit-xml#readme>
+homepage:            https://github.com/tvision-insights/hspec-junit-xml
+bug-reports:         https://github.com/tvision-insights/hspec-junit-xml/issues
+
+dependencies:
+- base
+- blaze-markup
+- bytestring
+- directory
+- hspec
+- text
+- time
+
+default-extensions:
+- OverloadedStrings
+- RecordWildCards
+
+ghc-options:
+- -Wall
+- -Werror
+
+library:
+  source-dirs: src
+
+# tests:
+#   hspec-junit-xml-test:
+#     main:                Spec.hs
+#     source-dirs:         test
+#     ghc-options:
+#     - -threaded
+#     - -rtsopts
+#     - -with-rtsopts=-N
+#     dependencies:
+#     - hspec-junit-xml
