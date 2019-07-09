@@ -12,3 +12,21 @@ The time formatter can also be used separately.
 
 A complete example of running a Spec can be found in [examples/](examples/test/Spec.hs). The output
 is [examples/test-results/examples.xml](examples/test-results/examples.xml).
+
+## Building
+
+Stack is recommended:
+
+```
+$ stack build
+$ cd examples
+$ stack test
+```
+
+Cabal also should work, at least for building the library:
+
+```
+$ cabal new-update
+$ cabal new-configure
+$ cabal new-build
+```
